@@ -4,85 +4,131 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum WorkSpacePermissionName {
-    CAN_ADD_MEMBER("CAN_ADD_MEMBER", "GIVES THE USER CAN ADD MEMBER TO WORKSPACE",
+    CAN_ADD_MEMBER("Add/Remove members",
+            "Gives the user the permission to add members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-
-    CAN_REMOVE_MEMBER("CAN_REMOVE_MEMBER", "CAN REMOVE USER",
+    CAN_REMOVE_MEMBER("CAN_REMOVE_MEMBER",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_EDIT_WORKSPACE("CAN_EDIT_WORKSPACE", "CAN_EDIT_WORKSPACE",
+    CAN_EDIT_WORKSPACE("CAN_EDIT_WORKSPACE",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_ADD_GUEST("CAN_ADD_GUEST", "CAN_ADD_GUEST",
+    CAN_ADD_GUEST("CAN_ADD_GUEST",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_SEE_TIME_SPENT("CAN_SEE_TIME_SPENT", "CAN_SEE_TIME_SPENT",
+    CAN_SEE_TIME_ESTIMATED("CAN_SEE_TIME_ESTIMATED",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_CREATE_SPACES("CAN_CREATE_SPACES", "CAN_CREATE_SPACES",
+    CAN_SEE_TIME_SPENT("CAN_SEE_TIME_SPENT",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_CREATE_FOLDER("CAN_CREATE_FOLDER", "CAN_CREATE_FOLDER",
+    CAN_CREATE_SPACES("CAN_CREATE_SPACES",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_CREATE_LISTS("CAN_CREATE_LISTS", "CAN_CREATE_LISTS",
+    CAN_CREATE_FOLDER("CAN_CREATE_FOLDER",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_DELETE_COMMENTS("CAN_DELETE_COMMENTS", "CAN_DELETE_COMMENTS",
+    CAN_CREATE_LISTS("CAN_CREATE_LISTS",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_DELETE_ITEMS("CAN_DELETE_ITEMS", "CAN_DELETE_ITEMS",
+    CAN_DELETE_COMMENTS("CAN_DELETE_COMMENTS",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_EDIT_DESCRIPTION("CAN_EDIT_DESCRIPTION", "CAN_EDIT_DESCRIPTION",
+    CAN_DELETE_ITEMS("CAN_DELETE_ITEMS",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_ADD_LIST_STATUS("CAN_ADD_LIST_STATUS", "CAN_ADD_LIST_STATUS",
+    CAN_EDIT_DESCRIPTION("CAN_EDIT_DESCRIPTION",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_ADD_LIST_STATUES("CAN_ADD_LIST_STATUES", "CAN_ADD_LIST_STATUES",
+    CAN_ADD_LIST_STATUSES("CAN_ADD_LIST_STATUSES",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_EDT_TEAM("CAN_EDT_TEAM", "CAN_EDT_TEAM",
+    CAN_EDIT_LIST_STATUSES("CAN_EDIT_LIST_STATUSES",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_EXPORT_TASKS("CAN_EXPORT_TASKS", "CAN_EXPORT_TASKS",
+    CAN_EDIT_TEAM("CAN_EDIT_TEAM",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_EDT_TEAM_OWNER("CAN_EDT_TEAM_OWNER", "CAN_EDT_TEAM_OWNER",
+    CAN_EXPORT_TASKS("CAN_EXPORT_TASKS",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_MANAGE_TAGS("CAN_MANAGE_TAGS", "CAN_MANAGE_TAGS",
+    CAN_EDIT_TEAM_OWNER("CAN_EDIT_TEAM_OWNER",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_SHARE("CAN_SHARE", "CAN_SHARE",
+    CAN_MANAGE_TAGS("CAN_MANAGE_TAGS",
+            "Gives the user the permission to remove members to the Workspace",
+            Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN, WorkspaceRoleName.ROLE_MEMBER)
+    ),
+    CAN_SHARE("CAN_SHARE",
+            "Gives the user the permission to remove members to the Workspace",
+            Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN, WorkspaceRoleName.ROLE_MEMBER)
+    ),
+    CAN_MANAGE_STATUSES("CAN_MANAGE_STATUSES",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_MANAGE_STATUSES("CAN_MANAGE_STATUSES", "CAN_MANAGE_STATUSES",
+    CAN_SEE_TEAM_MEMBERS("CAN_SEE_TEAM_MEMBERS",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_SEE_TEAM_MEMBERS("CAN_SEE_TEAM_MEMBERS", "CAN_SEE_TEAM_MEMBERS",
+    CAN_ADD_ROLE("CAN_ADD_ROLE",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     ),
-    CAN_ADD_ROLE("CAN_ADD_ROLE", "CAN_ADD_ROLE",
-            Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
-    ),
-    CAN_CHANGE_PERMISSION("CAN_CHANGE_PERMISSION", "CAN_CHANGE_PERMISSION",
+    CAN_CHANGE_PERMISSION("CAN_CHANGE_PERMISSION",
+            "Gives the user the permission to remove members to the Workspace",
             Arrays.asList(WorkspaceRoleName.ROLE_OWNER, WorkspaceRoleName.ROLE_ADMIN)
     );
 
 
+    private String name;
+    private String description;
+    private List<WorkspaceRoleName> workspaceRoleNames;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String name;
-    public String description;
-    public List<WorkspaceRoleName> workspaceRoleNames;
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<WorkspaceRoleName> getWorkspaceRoleNames() {
+        return workspaceRoleNames;
+    }
+
+    public void setWorkspaceRoleNames(List<WorkspaceRoleName> workspaceRoleNames) {
+        this.workspaceRoleNames = workspaceRoleNames;
+    }
 
     WorkSpacePermissionName(String name, String descriptoin, List<WorkspaceRoleName> workspaceRoleNames) {
         this.name = name;
         this.description = descriptoin;
         this.workspaceRoleNames = workspaceRoleNames;
     }
-    }
+}

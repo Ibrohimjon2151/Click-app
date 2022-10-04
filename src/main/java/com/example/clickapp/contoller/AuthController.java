@@ -37,7 +37,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public HttpEntity<?> loginUser(@Valid @RequestBody LoginDto loginDto) {
-        try {
+//        try {
             Authentication authenticate = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                     loginDto.getEmail(), loginDto.getPassword()));
 
@@ -45,9 +45,9 @@ public class AuthController {
             String token = jwtProvider.generateToken(principal.getEmail());
 
             return ResponseEntity.ok(token);
-        } catch (Exception e) {
-            return ResponseEntity.ok(new ApiResponse("Parol yoki Login hato", false));
-        }
+//        } catch (Exception e) {
+//            return ResponseEntity.ok(new ApiResponse("Parol yoki Login hato", false));
+//        }
     }
 
 

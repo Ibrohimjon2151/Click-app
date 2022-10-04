@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
+import java.sql.Timestamp;
 
 @Data
 @Entity
@@ -25,4 +26,12 @@ public class WorkSpaceUser extends AbsIdEntity {
 
     @ManyToOne(fetch = FetchType.LAZY , optional = false)
     WorkSpaceRole workSpaceRole;
+
+    private Timestamp lastActive;
+
+    private Timestamp dateInvited;
+
+    private Timestamp dateJoined;
+
+
 }

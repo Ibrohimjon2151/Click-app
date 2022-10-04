@@ -12,9 +12,9 @@ import java.sql.Timestamp;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"work_space_id" , "name"}))
 public class WorkSpaceRole extends AbsIdEntity {
 
     @ManyToOne
@@ -24,10 +24,12 @@ public class WorkSpaceRole extends AbsIdEntity {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private WorkspaceRoleName workspaceRoleName;
+    private WorkspaceRoleName workspaceRoleExtendName;
 
-    @Column(nullable = false)
-    private Timestamp dateInvited;
 
-    private Timestamp dateJoined;
+    public WorkSpaceRole(WorkSpace workSpace, String name, WorkspaceRoleName workspaceRoleName) {
+        this.workSpace = workSpace;
+        this.name = name;
+        this.workspaceRoleExtendName = workspaceRoleName;
+    }
 }

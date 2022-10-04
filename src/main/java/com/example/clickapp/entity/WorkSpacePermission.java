@@ -20,8 +20,6 @@ public class WorkSpacePermission extends AbsIdEntity {
     @ManyToOne
     private WorkSpaceRole workSpaceRole;
 
-    @Column(nullable = false)
-    private String name;
 
     @Enumerated(EnumType.STRING)
     private WorkSpacePermissionName workSpacePermissionName;
