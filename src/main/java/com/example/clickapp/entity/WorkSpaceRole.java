@@ -26,6 +26,8 @@ public class WorkSpaceRole extends AbsIdEntity {
     @Enumerated(EnumType.STRING)
     private WorkspaceRoleName workspaceRoleExtendName;
 
+    @ManyToOne
+    private Space space;
 
     public WorkSpaceRole(WorkSpace workSpace, String name, WorkspaceRoleName workspaceRoleName) {
         this.workSpace = workSpace;
